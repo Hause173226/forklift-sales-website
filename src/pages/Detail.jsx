@@ -1,9 +1,9 @@
-import { TiShoppingCart } from 'react-icons/ti';
+import Header from '../components/Header';
 
 export default function Detail() {
   return (
-    <div>
-      <TiShoppingCart size={50} />
+    <div className="min-h-screen w-full">
+      <Header />
     </div>
   );
 }
