@@ -2,46 +2,15 @@ import { IoIosMenu } from 'react-icons/io';
 import { IoChevronDown } from 'react-icons/io5';
 import Header from '../components/Header';
 import Slider from '../components/Slider';
+import Navbar from '../components/Navbar/Navbar';
 
 const Home = () => {
   return (
-    <div className="min-h-screen w-full">
+    <div className="min-h-screen w-full bg-[#fff]">
       {/* Header */}
       <Header />
       {/* Navigation */}
-      <nav className="bg-yellow-500 p-4 text-black">
-        <div className="container mx-auto flex justify-between">
-          <div className="flex items-center justify-between gap-2">
-            <IoIosMenu size={30} />
-            <span className="text-xl font-bold">Shop by Department</span>
-          </div>
-          <div className="flex gap-4">
-            <div className="flex items-center justify-center gap-2">
-              <span className="cursor-pointer text-xl">Home</span>
-              <IoChevronDown size={24} />
-            </div>
-            <div className="flex items-center justify-center gap-2">
-              <span className="cursor-pointer text-xl">Shop</span>
-              <IoChevronDown size={24} />
-            </div>
-            <div className="flex items-center justify-center gap-2">
-              <span className="cursor-pointer text-xl">Page</span>
-              <IoChevronDown size={24} />
-            </div>
-            <div className="flex items-center justify-center gap-2">
-              <span className="cursor-pointer text-xl">Blogs</span>
-              <IoChevronDown size={24} />
-            </div>
-          </div>
-          <div>
-            <div className="flex items-center justify-center gap-2">
-              <span className="cursor-pointer text-xl">Eng</span>
-              <IoChevronDown size={24} />
-            </div>
-          </div>
-        </div>
-      </nav>
-
+      <Navbar />
       {/* Main Content */}
       <div className="container mx-auto mt-6 grid grid-cols-3 gap-4">
         {/* Featured Banner */}
